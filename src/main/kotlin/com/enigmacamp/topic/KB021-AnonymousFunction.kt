@@ -1,4 +1,5 @@
-package com.enigmacamp.topic/*
+package com.enigmacamp.topic
+/*
  * Lambda menganggap baris terkahir sebagai return
  * Makanya lambda hanya untuk kasus2 sederhana, untuk function yang cukup kompleks digunakan anonymous function
  */
