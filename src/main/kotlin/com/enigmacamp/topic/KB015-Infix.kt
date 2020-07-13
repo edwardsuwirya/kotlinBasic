@@ -12,6 +12,19 @@ infix fun String.ubahCase(type: String): String {
     }
 }
 
+infix fun Int.ditambah(opr: Int): Int {
+    return this + opr
+}
+
+infix fun Int.hasilnya(opr: String): String {
+    if (opr.isBlank()) {
+        return "hasilnya $this"
+    } else {
+        return "$opr $this"
+    }
+
+}
+
 fun main() {
     val resultUpper = "Edo" ubahCase "U"
     val resultLower = "SaSa" ubahCase "L"
@@ -20,4 +33,7 @@ fun main() {
     println(resultLower)
 
     println("Kamu".ubahCase("L"))
+
+    val additionResult = (1 ditambah 2) hasilnya ""
+    println(additionResult)
 }
